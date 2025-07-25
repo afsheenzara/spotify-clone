@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spotify Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+  <a href="index.html">🏠 Home</a>
+  <a href="player.html">🎧 Player</a>
+</nav>
+
+  <div class="container">
+    <h1>🎵 My Spotify Clone</h1>
+    <input type="text" id="searchBar" placeholder="🔍 Search songs..." />
+
+
+    <div class="song-list" id="songList"></div>
+
+    <div class="now-playing">
+      <img id="songImage" src="" alt="Song Image" />
+      <h2 id="nowPlaying">Select a song</h2>
+      
+      <div class="progress-container">
+        <span id="currentTime">0:00</span>
+        <input type="range" id="progressBar" value="0" />
+        <span id="duration">0:00</span>
+      </div>
+
+      <button id="playPauseBtn">▶️ Play</button>
+    </div>
+
+    <audio id="audioPlayer"></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
